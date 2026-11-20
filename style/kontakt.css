@@ -1,4 +1,7 @@
 
+@import url(colors.css);
+@import url(fonts.css);
+
 .hCenter {
         width: 100%;
         overflow: hidden;
@@ -24,7 +27,7 @@
 
 .box h2 {
         flex: 1;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Times New Roman', Times, "source serif", serif;
         font-style: italic;
         font-size: 5vh;
         margin: 1vh;
