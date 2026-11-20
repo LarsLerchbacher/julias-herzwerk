@@ -18,11 +18,18 @@
 }
 
 #main_slogan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: row;
 }
 
 #slogan_text {
         flex-direction: column;
+}
+
+.special {
+        font-size: 2.5vh;
 }
 
 #intro h1 {

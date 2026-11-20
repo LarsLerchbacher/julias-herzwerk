@@ -1,0 +1,119 @@
+
+.hCenter {
+        width: 100%;
+        overflow: hidden;
+        align-items: center;
+        flex: 1;
+}
+
+.flow {
+        max-width: 65vh;
+        min-width: 65vh;
+        max-height: 65vh;
+        min-height: 65vh;
+}
+
+.box {
+        margin-left: 5vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.box h2 {
+        flex: 1;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-size: 5vh;
+        margin: 1vh;
+}
+
+.box img {
+        object-fit: cover;
+        transform: scale(0.75);
+}
+
+.box ul {
+        margin-top: 0;
+        list-style: none;
+        margin-bottom: 2.5vh;
+        font-weight: bold;
+}
+
+.box ul li {
+        margin: 5vh;
+}
+
+.box ul li::before {
+        color: var(--orange);
+        padding-right: 2vh;
+}
+
+.box ul li:nth-child(1)::before {
+        content: "🏠︎";
+        padding-left: 0.25vh;
+}
+
+.box ul li:nth-child(2)::before {
+        content: "🖂";
+        padding-left: 0.5vh;
+}
+
+
+.box ul li:nth-child(3)::before {
+        content: "🕻";
+        padding-left: 0.5vh;
+}
+
+.box ul li:nth-child(4)::before {
+        content: "🌐︎";
+}
+
+@media screen and (max-width: 1280px) {
+        .hCenter{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+        } 
+
+        .flow {
+                max-width: 55vw;
+                min-width: 55vw;
+                max-height: 55vw;
+                min-height: 55vw;
+        }
+
+        .box {
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                margin-left: 0;
+                word-break: normal;
+                font-size: 2vh;
+        }
+
+        .box ul {
+                margin-left: 0;
+                padding-left: 0;
+                width: 90%;
+                text-align: left;
+        }
+
+        .box ul li {
+                margin-left: 0;
+                margin-right: 0;
+        }
+
+        .box span {
+                text-align: center;
+                width: 100%;
+        }
+
+        .box img {
+                max-width: 100vw;
+        }
+
+}
