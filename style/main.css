@@ -5,13 +5,22 @@ h1 {
         font-weight: bold;
         color: var(--dark_green);
         text-align: center;
-        /*font-size: 2.5vw;*/
+        font-size: 6vh;
+}
+
+h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        text-align: center;
+        font-size: 4vh;
 }
 
 body {
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
         padding: 0;
+        font-size: 3vh;
+        word-wrap: break-word;
 }
 
 .bg {
@@ -22,10 +31,23 @@ body {
         align-items: center;
 }
 
+
+.orange {
+        background-color: var(--orange);
+        /*background: linear-gradient(180deg, var(--orange) 0%, var(--orange) 35%, var(--green) 65%, var(--green) 100%);*/
+
+}
+
+.green {
+        background-color: var(--green);
+}
+
 .island {
         background-color: white;
-        border-radius: 2vw;
+        border-radius: 1vw;
         padding: 4vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
         width: 80%;
         margin-top: 2vw;
         margin-bottom: 2vw;
@@ -40,6 +62,10 @@ body {
 .hCenter {
         display: flex;
         justify-content: center;
+}
+
+.hCenter * {
+        flex: 1;
 }
 
 img .flow {
@@ -95,6 +121,13 @@ img .flow {
 #menu ul li a:hover {
         background-color: var(--green);
 }
+
+#orange_green_blend {
+        height: 5vh;
+        width: 100vw;
+        background: linear-gradient(180deg, var(--orange) 0%, var(--green) 100%);
+}
+
 
 @media screen and (max-width: 1280px)
 {

@@ -1,15 +1,5 @@
 @import url(colors.css);
 
-.orange {
-        background-color: var(--orange);
-        /*background: linear-gradient(180deg, var(--orange) 0%, var(--orange) 35%, var(--green) 65%, var(--green) 100%);*/
-
-}
-
-.green {
-        background-color: var(--green);
-}
-
 #logo {
         float: left;
         max-width: 300px;
@@ -22,14 +12,6 @@
         margin: 1vw;
         margin-left: 5vw;
 }
-
-/*#stitched_line {
-        margin-bottom: 2vw;
-        border: none;
-        border-top: 0.5vh dashed var(--orange);
-        border-radius: 5px;
-        margin-top: 4vw;
-}*/
 
 #stitched_line {
         width: 100%;
@@ -48,10 +30,9 @@
         word-wrap: normal;
 }
 
-#orange_green_blend {
-        height: 5vh;
-        width: 100vw;
-        background: linear-gradient(180deg, var(--orange) 0%, var(--green) 100%);
+.small_heart {
+        position: relative;
+        top: 0.5vh;
 }
 
 
