@@ -1,0 +1,28 @@
+
+#menu ul li a {
+    background-color: var(--green);
+}
+
+#menu ul li a:hover {
+    background-color: var(--dark_green);
+}
+
+h1 {
+    color: var(--orange);
+    font-weight: 100;
+}
+
+h1 b {
+    font-weight: bold;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 3vh;
+    padding-top: 2.5vh;
+}
+
+p {
+    text-align: justify;
+}
