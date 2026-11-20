@@ -1,0 +1,249 @@
+
+.hCenter {
+        flex-wrap: wrap;
+}
+
+#standard,#special {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+
+}
+
+
+#left_special {
+        align-items: start;
+        margin-left: 5vh;
+        padding-right: 1vh;
+}
+
+#left_special div {
+        margin: 0vh;
+        margin-right: 5vh;
+        flex: 0;
+        img {
+                margin: 1vh;
+        }
+}
+
+#right_special {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        div {
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                div {
+                        flex-direction: column;
+                }
+                img {
+                        margin-right: 2vh;
+                }
+        }
+}
+
+#standard,#special{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(64, 73, 38);
+        h2 {
+                flex: 0;
+                text-align: center;
+                padding: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 3.5vh;
+        }
+        
+        ul {
+                width: 60%;
+                list-style: none;
+                li {
+                        padding-bottom: 2.5vh;
+                        
+                        p {
+                                padding: 0;
+                                margin: 0;
+                                margin-top: 1vh;
+                        }
+                }
+                li::before {
+                        content: url('../img/small-heart.png');
+                        padding-right: 3vh;
+                        position: relative;
+                        top: 0.5vh;
+                }
+        }
+        
+}
+
+
+h3 {
+        text-align: center;
+        font-size: 3vh;
+        color: rgb(64, 73, 38);
+        margin: 0.5vh;
+}
+
+.example_h2 {
+        color: var(--orange);
+        font-size: 4vh;
+}
+
+.grid {
+        margin-top: 10vh;
+        display: grid;
+        grid-template-columns: auto auto;
+}
+
+.grid div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+}
+
+.grid div div {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        align-items: start;
+        div h3{
+                text-align: left;
+        }
+        h3 {
+                text-align: left;
+        }
+        p {
+                text-align: left;
+        }
+        
+        div p {
+                text-align: left;
+        }
+}
+
+.flow {
+        width: 25vh;
+        float: left;
+        margin: 5vh;
+        margin-right: 7.5vh;
+        max-height: 32vh;
+        max-width: 24vh;
+
+        min-height: 24vh;
+        min-width: 32vh;
+
+        position: relative;
+}
+
+#repair {
+        grid-row: span 2;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+
+        div {
+
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                flex: 1;
+                
+
+                div {
+
+                        flex-direction: column;
+                        flex: 1;
+                        justify-content: center;
+                        align-items: center;
+
+
+                }
+        }
+}
+
+@media screen and (max-width: 1280px)
+{
+        #standard,#special ul {
+                width: 100%;
+        }
+
+        .grid {
+                grid-template-columns: auto;
+        }
+
+        .grid div {
+                flex-direction: column-reverse;
+        }
+
+        .flow{
+                margin: 2.5vh;
+        }
+
+        .grid div div {
+                align-items: center;
+        }
+
+        .grid div div p {
+                text-align: center;
+        }
+
+        #repair {
+                flex-direction: column;
+                align-items: center;
+        }
+
+        #repair div {
+                flex-direction: column-reverse;
+        }
+
+        #repair div div {
+                align-items: center;
+        }
+        
+        #left_special {
+                margin-left: 0;
+                padding-right: 0;
+                flex-direction: column-reverse;
+        }
+        
+        #left_special div {
+                flex-direction: column;
+        }
+        
+        #left_special div h3 {
+                text-align: center;
+        }
+        
+        #left_special div ul {
+                margin-top: 0;
+        }
+        
+        #left_special div div {
+                flex-direction: column;
+        }
+        
+        #right_special div {
+                flex-direction: column-reverse;
+        }
+        
+        #right_special div div {
+                flex-direction: column;
+        }
+        
+        #right_special {
+                flex-direction: column;
+        }
+        
+        #right_special div * {
+                text-align: center;
+        }
+        
+        #right_special div h3 {
+                padding-top: 4vh;
+        }
+        
+}
